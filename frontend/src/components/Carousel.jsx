@@ -17,13 +17,9 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="relative w-full h-64 bg-gray-100 overflow-hidden rounded">
-     <img
-  src={`http://localhost:5000/uploads/${images[index]}`}
+    <img
+  src={`${import.meta.env.VITE_API_URL}/uploads/${images[index]}`}
   alt={`Slide ${index}`}
-  className="w-full h-full object-contain"
-  onError={(e) => {
-    e.target.src = "https://via.placeholder.com/400x300?text=Image+Not+Found";
-  }}
 />
 
       {images.length > 1 && (
