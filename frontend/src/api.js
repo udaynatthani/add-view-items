@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: import.meta.env.VITE_API_URL, });
+const API = axios.create({ baseURL: "https://add-view-items-1.onrender.com"});
 
 export const fetchItems = () => API.get('/items');
 export const fetchItem = (id) => API.get(`/items/${id}`);
