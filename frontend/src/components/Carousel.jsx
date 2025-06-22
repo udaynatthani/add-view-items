@@ -18,7 +18,8 @@ const Carousel = ({ images }) => {
   return (
     <div className="relative w-full h-64 bg-gray-100 overflow-hidden rounded">
     <img
-  src={`${import.meta.env.VITE_API_URL}/uploads/${images[index]}`}
+  src={`https://add-view-items-1.onrender.com
+  /uploads/${images[index]}`}
   alt={`Slide ${index}`}
 />
 

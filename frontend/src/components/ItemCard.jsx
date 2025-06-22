@@ -7,7 +7,7 @@ const ItemCard = ({ item, onClick }) => {
       onClick={onClick}
     >
      <img
-  src={`${import.meta.env.VITE_API_URL}/uploads/${item.coverImage}`}
+  src={`https://add-view-items-1.onrender.com/uploads/${item.coverImage}`}
   alt={item.name}
 />
 
